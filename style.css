@@ -30,6 +30,11 @@
 
     background-color: #bd1d1d;
     background: #141414;
+    color: #ffc400;
+  }
+  input[type="submit"] {
+      background-color: #181406;
+      color: #fae5a2;
   }
   
   /* ------- Sections ------- */

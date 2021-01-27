@@ -1,5 +1,3 @@
-<!-- JOHN DOE WAS HERE -- 10.10.2020 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,20 +55,40 @@
       ---- CONTACT -----
       ------------->
       <section id="contact">
-        <form action="https://formspree.io/f/xaylvkzj" method="POST">
-          <input type="text" name="name"> <br>
+        <form name="contact" method="POST" data-netlify="true">
+
+          <label for="description"> Your project in a few words : </label> <br>
+          <input id="description" type="text" name="name"> <br>
+          <label for="email">Your email address : </label> <br>
+          <input id="email" type="email" name="name"> <br>
 
 
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <input type="checkbox" id="website" name="website" value="website">
           <label for="vehicle1"> I need a website</label><br>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-          <label for="vehicle2"> A mobile app</label><br>
+          <input type="checkbox" id="mobileapp" name="mobileapp" value="mobileapp">
+          <label for="vehicle2"> I need mobile app</label><br>
+          <input onclick="toggleSpecialInput()" type="checkbox" id="specialbox" name="vehicle2" value="Car">
+          <label for="vehicle2"> I need something more special</label> 
+          <input style="display: none;" placeholder="Describe want you specifically want here" type="text" id="specialfield"> <br>
  
 
-          <input type="submit" value="Send">
+          <input type="submit" value="Send !">
         </form>
       
       </section>
       
+      <script>
+        function toggleSpecialInput() {
+         let specialInput = document.getElementById("specialfield")
+         let specialCheckBox = document.getElementById("specialbox")
+         if (specialCheckBox.checked) {
+           specialInput.style.display = "block"; 
+         } else {
+          specialInput.style.display = "none"; 
+
+         }
+        }
+      
+      </script>
     </body>
 </html>
