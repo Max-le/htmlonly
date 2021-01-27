@@ -28,13 +28,12 @@
   }
   input {
 
-    background-color: #bd1d1d;
-    background: #141414;
-    color: #ffc400;
+    background-color: var(--bgcolor) ;
+    color: var(--highlight);
   }
   input[type="submit"] {
-      background-color: #181406;
-      color: #ffc400;
+      background-color: var(--bgcolor);
+      color:var(--highlight);
   }
   
   /* ------- Sections ------- */
