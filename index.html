@@ -25,6 +25,7 @@
       </h1>
       <nav>
         <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -41,16 +42,38 @@
             You have great people skills but no technical knowledge to code your project ?
           </p>
           <p>
-            <em>You've come at the right place.</em> 
-          </p>
-          <p>
-            I am a professional software developer experienced in <em>deploying quickly live applications</em> that have <em>great user experience</em> and user feel.<br>
-          </p>
+            <p>
+              <em>You've come at the right place.</em> 
+            </p>
+            <a href="#contact">Let's create yours.</a>
+          </section>
 
-          <a href="#contact">Get in touch</a>
-        
-      </section>
 
+
+      <!-- ----------
+      ---- About -----
+      ------------->
+          <section id="about"> 
+            </p>
+            <p>
+              I provide a Technical Founder as a service ; it's my job to turn your idea into reality.
+              I am a professional software developer experienced in <em>deploying quickly live applications</em> that have <em>great user experience</em> and user feel.<br>
+            </p>
+  
+            <p>
+              Here are a few projects that I successfully launched : 
+              <ul>
+                <li><a href="https://humanpat.ch" target="_blank" rel="noopener noreferrer">Human Patch</a></li>
+                <li><a href="https://extractit.netlify.app/" target="_blank" rel="noopener noreferrer">Extract it</a></li>
+                <li> <a href="https://master.d22x1eh3k2s415.amplifyapp.com/">Wiki Translator</a></li>
+              </ul>
+            </p>
+            <a href="#contact">Let's create yours.</a>
+
+          </section>
+          
+
+      
 
 
       <!------------
@@ -60,18 +83,18 @@
         <form name="contact" method="POST" data-netlify="true">
 
           <label for="description"> Your project in a few words : </label> <br>
-          <input id="description" type="text" name="name"> <br>
+          <input id="description" type="text" name="description"> <br>
           <label for="email">Your email address : </label> <br>
-          <input id="email" type="email" name="name"> <br>
+          <input id="email" type="email" name="email"> <br>
 
 
           <input type="checkbox" id="website" name="website" value="website">
-          <label for="vehicle1"> I need a website</label><br>
+          <label for="website"> I need a website</label><br>
           <input type="checkbox" id="mobileapp" name="mobileapp" value="mobileapp">
-          <label for="vehicle2"> I need mobile app</label><br>
-          <input onclick="toggleSpecialInput()" type="checkbox" id="specialbox" name="vehicle2" value="Car">
-          <label for="vehicle2"> I need something more special</label> 
-          <input style="display: none;" placeholder="Describe want you specifically want here" type="text" id="specialfield"> <br>
+          <label for="mobileapp"> I need mobile app</label><br>
+          <input onclick="toggleSpecialInput()" type="checkbox" id="specialbox">
+          <label for="specialbox"> I need something more special</label> 
+          <input style="display: none;" placeholder="Describe want you specifically want here" type="text" name="specialfield" id="specialfield"> <br>
  
 
           <input type="submit" value="Send !">
