@@ -28,12 +28,24 @@
   }
   input {
 
-    background-color: var(--bgcolor) ;
-    color: var(--highlight);
+    border-radius: 4px;
+    background:rgba(255,255,100,.075);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04);
+    color: var(--textcolor);
+    font-family: ui-monospace, SF Mono, Menlo, Monaco, Andale Mono, monospace;
+    font-size: 1em;
+    opacity: .7;
   }
+
+  /* Submit button on form*/
   input[type="submit"] {
       background-color: var(--bgcolor);
       color:var(--highlight);
+      border: 1px solid;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 4px 2px;
   }
   
   /* ------- Sections ------- */
